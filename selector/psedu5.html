@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1::before {
+        content: "before ";
+        color: red;
+      }
+      h1::after {
+        content: " after";
+        color: blue;
+      }
+      h3::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+   		 12) pseudo element(가상 요소)
+				   - ::before
+				   - ::after
+     -->
+    <h1>가상 요소</h1>
+    <h3>가상 요소 선택자</h3>
+    <ul>
+      <li>List1</li>
+      <li>List2</li>
+      <li>List3</li>
+    </ul>
+  </body>
+</html>

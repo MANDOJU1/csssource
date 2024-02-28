@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <style>
+      div {
+        /* 글꼴명 사이에 공백이 존재한다면 묶어서 표시 */
+        /* 처음 글꼴로 표현 (대체순위가 있음) */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* font-size: 20px;
+        font-weight: bold; */
+        line-height: 1.5;
+        font-size: 30px;
+        font-style: italic;
+      }
+      .roboto- medium {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        font
+        1) font-family : 글꼴
+           - 계열
+             (1) Serif : 바탕체
+             (2) sans-serif : 고딕체
+             (3) Cursive : 필기체
+             (4) Monospace : 고정너비
+
+        2) font-size : 글꼴 크기
+        3) font-style : nomal, italic(기울임꼴), oblique
+        4) font-weight : 굵게
+            100 ~ 900 숫자지정(400이 기본), bold(==700), bolder, ...
+
+        1) line-height : 줄높이
+           줄높이 = 글자크기 + 여백
+           고정값 가능 / 배수(1.4 ~ 1.7)
+     -->
+    <p>font-size / font-style / font-weight / line-height / font-family</p>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur animi recusandae reiciendis commodi, hic quod odit incidunt? Eaque
+      id alias, nulla minus voluptate unde suscipit possimus quisquam voluptatum dolore, magnam rerum odio est perferendis excepturi. Facilis
+      reprehenderit sunt doloremque, nihil laudantium maxime ipsa? Nostrum vitae obcaecati dignissimos culpa architecto?
+    </div>
+    <div class="serif" style="font-family: serif">Hello World</div>
+    <div class="sans-serif" style="font-family: sans-serif">Hello World</div>
+    <div class="monospace" style="font-family: monospace">Hello World</div>
+    <div class="cursive" style="font-family: cursive">Hello World</div>
+    <p class="roboto-medium">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus quae a laboriosam! Temporibus obcaecati ipsum enim velit,
+      quibusdam, at veniam voluptatibus facere, assumenda nulla pariatur. Doloribus quae nam enim?
+    </p>
+  </body>
+</html>
