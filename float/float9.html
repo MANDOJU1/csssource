@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 요소에 box-sizing 설정 */
+      * {
+        box-sizing: border-box;
+      }
+      /* header 요소 : 배경색#333, 안쪽여백30, 가운데정렬, 글꼴크기35, 글자색 흰색 */
+      header {
+        background-color: #333;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+      /* nav 요소 : 높이 500px, 배경색#ccc, 안쪽여백 20 */
+      nav {
+        width: 30%;
+        height: 500px;
+        padding: 20px;
+        background-color: #ccc;
+        float: left;
+      }
+      /* article 요소 : 높이 500px, 배경색#f1f1f1, 안쪽여백 20 */
+      article {
+        height: 500px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        float: left;
+        width: 70%;
+      }
+      /* footer 요소 : 배경색#777, 안쪽여백 10, 가운데정렬, 글자색 흰색 */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Cities</h2>
+    </header>
+    <section class="clearfix">
+      <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tyoko</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>London</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero molestias distinctio, veritatis corporis modi suscipit beatae excepturi sint
+          officia corrupti quia at, dolor cumque facilis non nemo aliquid nihil natus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa quam maxime sunt dolorem perferendis, neque, minus fugiat debitis
+          dolores iste, voluptates nisi eaque ullam. Rem saepe alias impedit illum quaerat nemo, sint facilis quo facere, iste veniam! Provident
+          aperiam maiores ea, officia cupiditate voluptatem suscipit assumenda, alias, ipsa blanditiis voluptates fugiat officiis eos consequuntur
+          reprehenderit accusamus corrupti! Amet, quo! Fugiat fuga error culpa quasi architecto temporibus necessitatibus doloribus, pariatur nisi
+          doloremque vel ipsa molestias aspernatur deserunt praesentium natus saepe optio eius assumenda iusto. Minima nostrum ad dolorem sed fuga
+          assumenda modi id cupiditate, quisquam iusto omnis quibusdam amet non.
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
