@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-wrap: wrap-reverse; */
+        justify-content: space-evenly;
+        border: 2px solid;
+        height: 400px;
+      }
+      .container div {
+        width: 200px;
+        height: 100px;
+      }
+      .container .item:nth-child(1) {
+        background-color: lavender;
+      }
+      .container .item:nth-child(2) {
+        background-color: lemonchiffon;
+      }
+      .container .item:nth-child(3) {
+        background-color: lavenderblush;
+      }
+      .container .item:nth-child(4) {
+        background-color: lightgoldenrodyellow;
+      }
+      .container .item:nth-child(5) {
+        background-color: lightcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        레이아웃 : 위-아래, 수직 구성(스크롤 사용)
+
+        1. 수평(왼 => 오)
+        1) float
+        2) inline-block
+        3) flex
+           - flex-direction(방향) : row(기본 : 왼 -> 오), column(위->아래), row-reverse(float: right와 같음), column-reverse;
+           - flex-wrap(여러줄 허용 여부) : wrap(여러 줄로 이동시 맨 나중 요소부터), nowrap(기본), wrap-reverse(여러 줄로 이동시 맨 첫번째 요소부터)
+           - justify-content(주 축 정렬) : flex-start(기본-왼쪽 정렬), flex-end(오른쪽 정렬), center(가운데정렬), space-between(첫요소는 왼쪽, 마지막 요소 오른쪽에 몰고 요소 사이에 공백 배치), space-around(모든 요소 사이에 공백 배치-가운데 배치 공백 2배), space-evenly(모든 요소 사이에 공백을 동일하게)
+              주축 : 요소가 배치되는 방향(flex-direction : row 라면 가로축이 주축, flex-direction:column => 세로축)
+              보조(교차)축 : 주축과 교차되는 축 (flex-direction : row => 세로축 , flex-direction:column => 가로축)
+           - align-content(교차 축 정렬)
+     -->
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non quis alias voluptatibus voluptates cum harum, minus, dolorem neque est eaque?
+      Saepe aperiam, quisquam ipsa magnam exercitationem quas modi ad!
+    </p>
+  </body>
+</html>
