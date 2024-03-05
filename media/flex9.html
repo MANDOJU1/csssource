@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #333338;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+      /* main-content, sidebar : 배경색 #eee, padding 6, 바깥여백 10 */
+      .main-content,
+      .sidebar {
+        background: #eee;
+        padding: 6px;
+        margin: 10px;
+      }
+      /* panel : 배경색 흰색, 안쪽여백 20, 바깥여백 10 */
+      .panel {
+        background: white;
+        padding: 20px;
+        margin: 10px;
+      }
+      .sidebar {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore beatae repellat cumque impedit harum vitae, eius facere eveniet inventore
+            tenetur officia commodi expedita molestiae veniam error itaque laborum eligendi nemo!
+          </p>
+          <img src="https://placehold.co/100x120" alt="" />
+          <p>
+            <!-- lorem50 -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta modi harum quis vitae, consectetur nemo accusamus quibusdam,
+            necessitatibus esse, architecto voluptatum eveniet ut quam quas tempore veritatis laborum! Nesciunt odit sapiente assumenda iusto vero
+            consequatur corrupti ab quasi quo voluptas tempore necessitatibus maiores, quis quisquam alias ex enim consequuntur ipsa?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat perspiciatis molestias nam repellendus iure saepe non, quis molestiae
+            ratione. Ullam molestias recusandae cum asperiores eveniet distinctio dolorum tenetur delectus deserunt!
+          </p>
+          <h3>Subtitle</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nam mollitia sit a vel culpa minus, deleniti eius ad, suscipit consectetur
+            soluta laborum. Ducimus soluta, laboriosam voluptas itaque placeat illum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nam mollitia sit a vel culpa minus, deleniti eius ad, suscipit consectetur
+            soluta laborum. Ducimus soluta, laboriosam voluptas itaque placeat illum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nam mollitia sit a vel culpa minus, deleniti eius ad, suscipit consectetur
+            soluta laborum. Ducimus soluta, laboriosam voluptas itaque placeat illum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nam mollitia sit a vel culpa minus, deleniti eius ad, suscipit consectetur
+            soluta laborum. Ducimus soluta, laboriosam voluptas itaque placeat illum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nam mollitia sit a vel culpa minus, deleniti eius ad, suscipit consectetur
+            soluta laborum. Ducimus soluta, laboriosam voluptas itaque placeat illum.
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, debitis. Numquam quisquam assumenda nemo iure possimus provident quis
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, debitis. Numquam quisquam assumenda</p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, debitis. Numquam</p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

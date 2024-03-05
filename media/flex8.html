@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 요소 크기 산정시 border 포함 */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* body 배경색 #ecf0f1 */
+      body {
+        background-color: #ecf0f1;
+      }
+
+      /* wrapper max-width 60rem width 100%, margin 2rem auto */
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+
+      /* flexbg flex 컨테이너 설정 */
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        /* 배경색 흰색, width 60%, padding 1.618rem */
+        background-color: white;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+
+      /* sidebar width 20%, padding 1.618rem 글자색 흰색 */
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+        color: white;
+      }
+
+      .flexbg .left {
+        /* 배경색 #3498db */
+        background-color: #3498db;
+        order: 1;
+      }
+      .flexbg .right {
+        /* 배경색 #34495e */
+        background-color: #34495e;
+        order: 3;
+      }
+
+      /* 481 ~ 768 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+
+        /* sidebar width 20%, padding 1.618rem 글자색 흰색 */
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+      /* 0 ~ 480 */
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis dignissimos aspernatur laboriosam debitis. Rerum delectus autem
+          voluptate ipsum veniam magnam exercitationem officiis ad aliquam! Voluptatibus voluptates atque deserunt neque omnis iure adipisci
+          consectetur, in odio nostrum optio a tenetur doloremque blanditiis quisquam necessitatibus vitae quis error voluptate quos? Quo reiciendis
+          nulla illum dolorem praesentium sint a neque aliquam ducimus officiis, optio quos laborum laboriosam ipsa quis, qui voluptates facere eius
+          repudiandae! Totam, unde. Rerum dicta quasi labore illo perspiciatis quos repellendus, accusamus voluptatibus ad necessitatibus nulla
+          repellat ipsam? Tenetur reiciendis modi officia possimus repellendus hic, natus ipsam nam blanditiis? Ducimus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis dignissimos aspernatur laboriosam debitis. Rerum delectus autem
+          voluptate ipsum veniam magnam exercitationem officiis ad aliquam! Voluptatibus voluptates atque deserunt neque omnis iure adipisci
+          consectetur, in odio nostrum optio a tenetur doloremque blanditiis quisquam necessitatibus vitae quis error voluptate quos? Quo reiciendis
+          nulla illum dolorem praesentium sint a neque aliquam ducimus officiis, optio quos laborum laboriosam ipsa quis, qui voluptates facere eius
+          repudiandae! Totam, unde. Rerum dicta quasi labore illo perspiciatis quos repellendus, accusamus voluptatibus ad necessitatibus nulla
+          repellat ipsam? Tenetur reiciendis modi officia possimus repellendus hic, natus ipsam nam blanditiis? Ducimus.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolores amet quod cum impedit qui adipisci vero nisi vel sed ut voluptatem,
+          saepe unde praesentium quasi voluptatibus quas necessitatibus hic, odio voluptas numquam temporibus reiciendis quis sint? Placeat laboriosam
+          eligendi ut doloribus quasi cum voluptas, velit, nesciunt similique aliquid reprehenderit?
+        </p>
+      </aside>
+      <aside class="sidebar right">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolores amet quod cum impedit qui adipisci vero nisi vel sed ut voluptatem,
+          saepe unde praesentium quasi voluptatibus quas necessitatibus hic, odio voluptas numquam temporibus reiciendis quis sint? Placeat laboriosam
+          eligendi ut doloribus quasi cum voluptas, velit, nesciunt similique aliquid reprehenderit?
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>
